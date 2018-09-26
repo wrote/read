@@ -1,26 +1,28 @@
-const { debuglog } = require('util');
-
-const LOG = debuglog('@wrote/read')
+const { createReadStream } = require('fs');
+const { collect } = require('catchment');
 
 /**
  * Read a file.
- * @param {Config} config Options for the program.
- * @param {boolean} config.shouldRun A boolean option.
+ * @param {string} path The path to the file to read.
  */
-               async function read(config) {
-  const {
-    type,
-  } = config
-  LOG('@wrote/read called with %s', type)
-  return type
+               async function read(path) {
+  const rs = createReadStream(path)
+  /** @type {string} */
+  const res = await collect(rs)
+  return res
 }
 
-/* documentary types/index.xml */
 /**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} shouldRun A boolean option.
+ * Read a file as a buffer.
+ * @param {string} path The path to the file to read.
  */
-
+       async function readBuffer(path) {
+  const rs = createReadStream(path)
+  /** @type {Buffer} */
+  const res = await collect(rs, { binary: true })
+  return res
+}
 
 module.exports = read
+module.exports.readBuffer = readBuffer
 //# sourceMappingURL=index.js.map
