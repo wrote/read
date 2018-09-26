@@ -2,7 +2,7 @@
 
 %NPM: @wrote/read%
 
-`@wrote/read` is Read a file.
+`@wrote/read` is a package to read a file as a string or a Buffer.
 
 ```sh
 yarn add -E @wrote/read
@@ -11,3 +11,5 @@ yarn add -E @wrote/read
 ## Table Of Contents
 
 %TOC%
+
+%~%

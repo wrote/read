@@ -2,5 +2,6 @@
 import read from '../src'
 
 (async () => {
-  await read()
+  const res = await read('example/data.txt')
+  console.log(res)
 })()
