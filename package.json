@@ -27,7 +27,13 @@
   },
   "keywords": [
     "read",
-    "wrote"
+    "wrote",
+    "filesystem",
+    "fs",
+    "buffer",
+    "string",
+    "access",
+    "data"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
