@@ -1,22 +1,24 @@
-import { debuglog } from 'util'
-
-const LOG = debuglog('@wrote/read')
+import { createReadStream } from 'fs'
+import { collect } from 'catchment'
 
 /**
  * Read a file.
- * @param {Config} config Options for the program.
- * @param {boolean} config.shouldRun A boolean option.
+ * @param {string} path The path to the file to read.
  */
-export default async function read(config) {
-  const {
-    type,
-  } = config
-  LOG('@wrote/read called with %s', type)
-  return type
+export default async function read(path) {
+  const rs = createReadStream(path)
+  /** @type {string} */
+  const res = await collect(rs)
+  return res
 }
 
-/* documentary types/index.xml */
 /**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} shouldRun A boolean option.
+ * Read a file as a buffer.
+ * @param {string} path The path to the file to read.
  */
+export async function readBuffer(path) {
+  const rs = createReadStream(path)
+  /** @type {Buffer} */
+  const res = await collect(rs, { binary: true })
+  return res
+}
