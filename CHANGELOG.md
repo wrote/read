@@ -1,3 +1,9 @@
+## 15 January 2019
+
+### 1.0.2
+
+- [deps] Update `catchment`.
+
 ## 14 January 2019
 
 ### 1.0.1

@@ -44,14 +44,14 @@
   },
   "homepage": "https://github.com/wrote/read#readme",
   "devDependencies": {
-    "alamode": "1.5.1",
+    "alamode": "1.6.1",
     "documentary": "1.20.1",
     "eslint-config-artdeco": "1.0.1",
-    "temp-context": "1.1.0",
+    "temp-context": "2.1.0",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.5.1"
+    "zoroaster": "3.6.6"
   },
   "dependencies": {
-    "catchment": "3.1.1"
+    "catchment": "3.2.1"
   }
 }
