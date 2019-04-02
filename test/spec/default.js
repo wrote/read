@@ -7,13 +7,13 @@ const T = {
   context: TempContext,
   async 'reads a file'({ write }) {
     const t = 'test-data'
-    const pp = await write(t, 'data.temp')
+    const pp = await write('data.temp', t)
     const res = await read(pp)
     equal(res, t)
   },
   async 'reads a file as a buffer'({ write }) {
     const t = 'test-data'
-    const pp = await write(t, 'data.temp')
+    const pp = await write('data.temp', t)
     const res = await readBuffer(pp)
     ok(res instanceof Buffer)
     equal(`${res}`, t)

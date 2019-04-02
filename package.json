@@ -2,7 +2,7 @@
   "name": "@wrote/read",
   "version": "1.0.2",
   "description": "Read a file.",
-  "main": "build",
+  "main": "build/index.js",
   "module": "src/index.js",
   "scripts": {
     "t": "zoroaster -a",
@@ -16,7 +16,7 @@
     "d": "NODE_DEBUG=doc doc src/index.js -g",
     "build": "yarn-s d b doc",
     "rec": "NODE_DEBUG=appshot appshot -T 23 -a Terminal -y 150 -f",
-    "e": "node example",
+    "e": "alanode",
     "example/": "yarn e example/example.js"
   },
   "files": [
@@ -44,14 +44,14 @@
   },
   "homepage": "https://github.com/wrote/read#readme",
   "devDependencies": {
-    "alamode": "1.6.1",
-    "documentary": "1.20.1",
+    "alamode": "1.9.0",
+    "documentary": "1.23.2",
     "eslint-config-artdeco": "1.0.1",
-    "temp-context": "2.1.0",
+    "temp-context": "2.1.2",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.6.6"
+    "zoroaster": "3.11.2"
   },
   "dependencies": {
-    "catchment": "3.2.1"
+    "catchment": "3.2.3"
   }
 }

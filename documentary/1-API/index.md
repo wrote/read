@@ -16,8 +16,8 @@ import read, { readBuffer } from '@wrote/read'
 
 Read the file as a string.
 
-%EXAMPLE: example/example.js, ../src => @wrote/read%
-%FORK example example/example%
+%EXAMPLE: example/example, ../src => @wrote/read%
+%FORK example/example%
 
 %~%
 
@@ -29,7 +29,7 @@ Read the file as a string.
 
 Read the file as a Buffer.
 
-%EXAMPLE: example/buffer.js, ../src => @wrote/read%
-%FORK example example/buffer%
+%EXAMPLE: example/buffer, ../src => @wrote/read%
+%FORK example/buffer%
 
 %~%
