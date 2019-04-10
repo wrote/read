@@ -1,7 +1,7 @@
 {
   "name": "@wrote/read",
   "version": "1.0.3",
-  "description": "Read a file.",
+  "description": "Read the contents of file from the filesystem.",
   "main": "build/index.js",
   "module": "src/index.js",
   "scripts": {
@@ -35,7 +35,8 @@
     "buffer",
     "string",
     "access",
-    "data"
+    "data",
+    "file"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",
@@ -44,14 +45,14 @@
   },
   "homepage": "https://github.com/wrote/read#readme",
   "devDependencies": {
-    "alamode": "1.9.0",
-    "documentary": "1.23.2",
+    "alamode": "^1.9.2",
+    "documentary": "^1.23.4",
     "eslint-config-artdeco": "1.0.1",
-    "temp-context": "2.1.2",
+    "temp-context": "^2.1.3",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.11.2"
+    "zoroaster": "^3.11.4"
   },
   "dependencies": {
-    "catchment": "3.2.3"
+    "catchment": "^3.3.0"
   }
 }

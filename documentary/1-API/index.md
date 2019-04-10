@@ -16,8 +16,8 @@ import read, { readBuffer } from '@wrote/read'
 
 Read the file as a string.
 
-%EXAMPLE: example/example, ../src => @wrote/read%
-%FORK example/example%
+%EXAMPLE: example, ../src => @wrote/read%
+%FORK example%
 
 %~%
 
